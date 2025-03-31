@@ -139,7 +139,7 @@ public class HanseaticSynchronizeBackend extends AbstractSynchronizeBackend<Hans
             Logger.debug("Hanseatic: Alle Buchungen aus dem Cache: "+umsaetze);
             monitor.setPercentComplete(1);
             
-            webClient.getOptions().setUseInsecureSSL(true); // CHANGE BACK!!!
+            webClient.getOptions().setUseInsecureSSL(false);
             webClient.getOptions().setRedirectEnabled(true);
             webClient.getOptions().setJavaScriptEnabled(false);
             webClient.getOptions().setThrowExceptionOnScriptError(false);
